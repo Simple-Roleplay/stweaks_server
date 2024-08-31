@@ -1,0 +1,15 @@
+services:
+  stweaks:
+    container_name: stweaks_server
+    image: simple_roleplay/stweaks_server
+    environment:
+      # To make it work, change this value to something random
+      # you may use openssl rand -hex 32 if you have openssl it'll provide you a password with
+      # high entropy
+      STWEAKS_MANAGEMENT_API_KEY: "test"
+    ports:
+      - 80:8080
+    restart: always
+    volumes:
+      - ./modules/:/app/modules/
+      - ./config.json:/app/config.json
