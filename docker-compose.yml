@@ -6,7 +6,7 @@ services:
       # To make it work, change this value to something random
       # you may use openssl rand -hex 32 if you have openssl it'll provide you a password with
       # high entropy
-      STWEAKS_MANAGEMENT_API_KEY: "test"
+      STWEAKS_MANAGEMENT_API_KEY: "changeme"
     ports:
       - 80:8080
     restart: always
