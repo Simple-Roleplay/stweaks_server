@@ -61,7 +61,6 @@ def reload_modules():
     if key is None or key != api_key:
         return {'message': '401 Unauthorized'}, 401
     initialize_modules()
-    print(modules)
     return {'message': 'modules successfully reloaded'}
 
 @app.route('/new')
