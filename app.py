@@ -41,7 +41,7 @@ def encode_lua(s):
 # initialize existing modules
 def initialize_modules():
     global modules
-    with open('config.json', 'r') as f:
+    with open('config/config.json', 'r') as f:
         modules = pyjson5.loads(f.read())
 
     for m in modules:

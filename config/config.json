@@ -4,7 +4,6 @@
     "filename": "test.lua",
     "description": "description du module ici",
     "author": "azzen",
-    "whitelist": [
-    ], // Ajouter des steamids si on veut rendre le module privé, laisser vide sinon.
+    "whitelist": [], // Ajouter des steamids si on veut rendre le module privé, laisser vide sinon.
   }
 ]
